@@ -214,89 +214,57 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="md:flex items-center gap-16">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <svg viewBox="0 0 800 600" class="rounded-xl shadow-md w-full bg-gray-50 p-6">
-                        <!-- Circular process diagram -->
+                    <svg viewBox="0 0 800 400" class="rounded-xl shadow-md w-full bg-white p-6">
+                        <!-- Simple horizontal process flow -->
                         <defs>
-                            <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" stop-color="#3b82f6" />
-                                <stop offset="100%" stop-color="#6366f1" />
+                                <stop offset="100%" stop-color="#1e40af" />
                             </linearGradient>
                         </defs>
                         
-                        <!-- Center circle -->
-                        <circle cx="400" cy="300" r="80" fill="#0e1c5a" />
-                        <text x="400" y="300" text-anchor="middle" fill="white" font-weight="bold" font-size="24">AI IMPLEMENTATION</text>
-                        <text x="400" y="330" text-anchor="middle" fill="white" font-size="18">FRAMEWORK</text>
+                        <!-- Process flow arrows -->
+                        <path d="M120 200 L680 200" stroke="#e5e7eb" stroke-width="8" />
+                        <path d="M160 200 L680 200" stroke="url(#blueGradient)" stroke-width="8" stroke-linecap="round" />
                         
-                        <!-- Process circles -->
-                        <g class="process-node">
-                            <!-- Assess -->
-                            <circle cx="400" cy="120" r="70" fill="url(#circleGradient)" />
-                            <text x="400" y="110" text-anchor="middle" fill="white" font-weight="bold" font-size="22">1</text>
-                            <text x="400" y="140" text-anchor="middle" fill="white" font-weight="bold" font-size="20">ASSESS</text>
-                            <path d="M400 180 L400 220" stroke="#0e1c5a" stroke-width="4" stroke-dasharray="5,5" />
-                        </g>
+                        <!-- Process steps -->
+                        <!-- Step 1: Assess -->
+                        <circle cx="160" cy="200" r="50" fill="#3b82f6" />
+                        <text x="160" y="195" text-anchor="middle" fill="white" font-weight="bold" font-size="18">1</text>
+                        <text x="160" y="280" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="16">ASSESS</text>
                         
-                        <!-- Design -->
-                        <g class="process-node">
-                            <circle cx="580" cy="200" r="70" fill="url(#circleGradient)" />
-                            <text x="580" y="190" text-anchor="middle" fill="white" font-weight="bold" font-size="22">2</text>
-                            <text x="580" y="220" text-anchor="middle" fill="white" font-weight="bold" font-size="20">DESIGN</text>
-                            <path d="M530 240 L480 270" stroke="#0e1c5a" stroke-width="4" stroke-dasharray="5,5" />
-                        </g>
+                        <!-- Step 2: Design -->
+                        <circle cx="290" cy="200" r="50" fill="#4f46e5" />
+                        <text x="290" y="195" text-anchor="middle" fill="white" font-weight="bold" font-size="18">2</text>
+                        <text x="290" y="280" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="16">DESIGN</text>
                         
-                        <!-- Implement -->
-                        <g class="process-node">
-                            <circle cx="580" cy="400" r="70" fill="url(#circleGradient)" />
-                            <text x="580" y="390" text-anchor="middle" fill="white" font-weight="bold" font-size="22">3</text>
-                            <text x="580" y="420" text-anchor="middle" fill="white" font-weight="bold" font-size="20">IMPLEMENT</text>
-                            <path d="M530 360 L480 330" stroke="#0e1c5a" stroke-width="4" stroke-dasharray="5,5" />
-                        </g>
+                        <!-- Step 3: Implement -->
+                        <circle cx="420" cy="200" r="50" fill="#4338ca" />
+                        <text x="420" y="195" text-anchor="middle" fill="white" font-weight="bold" font-size="18">3</text>
+                        <text x="420" y="280" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="16">IMPLEMENT</text>
                         
-                        <!-- Measure -->
-                        <g class="process-node">
-                            <circle cx="400" cy="480" r="70" fill="url(#circleGradient)" />
-                            <text x="400" y="470" text-anchor="middle" fill="white" font-weight="bold" font-size="22">4</text>
-                            <text x="400" y="500" text-anchor="middle" fill="white" font-weight="bold" font-size="20">MEASURE</text>
-                            <path d="M400 410 L400 380" stroke="#0e1c5a" stroke-width="4" stroke-dasharray="5,5" />
-                        </g>
+                        <!-- Step 4: Measure -->
+                        <circle cx="550" cy="200" r="50" fill="#3730a3" />
+                        <text x="550" y="195" text-anchor="middle" fill="white" font-weight="bold" font-size="18">4</text>
+                        <text x="550" y="280" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="16">MEASURE</text>
                         
-                        <!-- Iterate -->
-                        <g class="process-node">
-                            <circle cx="220" cy="400" r="70" fill="url(#circleGradient)" />
-                            <text x="220" y="390" text-anchor="middle" fill="white" font-weight="bold" font-size="22">5</text>
-                            <text x="220" y="420" text-anchor="middle" fill="white" font-weight="bold" font-size="20">ITERATE</text>
-                            <text x="220" y="445" text-anchor="middle" fill="white" font-size="16">& SCALE</text>
-                            <path d="M270 360 L320 330" stroke="#0e1c5a" stroke-width="4" stroke-dasharray="5,5" />
-                        </g>
+                        <!-- Step 5: Scale -->
+                        <circle cx="680" cy="200" r="50" fill="#312e81" />
+                        <text x="680" y="195" text-anchor="middle" fill="white" font-weight="bold" font-size="18">5</text>
+                        <text x="680" y="280" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="16">SCALE</text>
                         
-                        <!-- Back to start (completing the circle) -->
-                        <g class="process-node">
-                            <path d="M220 330 L270 200 L340 170" stroke="#0e1c5a" stroke-width="4" stroke-dasharray="5,5" />
-                        </g>
+                        <!-- Simple icons -->
+                        <text x="160" y="210" text-anchor="middle" fill="white" font-size="22">📊</text>
+                        <text x="290" y="210" text-anchor="middle" fill="white" font-size="22">✏️</text>
+                        <text x="420" y="210" text-anchor="middle" fill="white" font-size="22">🚀</text>
+                        <text x="550" y="210" text-anchor="middle" fill="white" font-size="22">📈</text>
+                        <text x="680" y="210" text-anchor="middle" fill="white" font-size="22">🔄</text>
                         
-                        <!-- Icons for each step -->
-                        <g>
-                            <!-- Assess icon -->
-                            <circle cx="400" cy="120" r="25" fill="white" opacity="0.2" />
-                            <text x="400" y="128" text-anchor="middle" fill="white" font-family="FontAwesome" font-size="22">⚙️</text>
-                            
-                            <!-- Design icon -->
-                            <circle cx="580" cy="200" r="25" fill="white" opacity="0.2" />
-                            <text x="580" y="208" text-anchor="middle" fill="white" font-family="FontAwesome" font-size="22">📐</text>
-                            
-                            <!-- Implement icon -->
-                            <circle cx="580" cy="400" r="25" fill="white" opacity="0.2" />
-                            <text x="580" y="408" text-anchor="middle" fill="white" font-family="FontAwesome" font-size="22">🚀</text>
-                            
-                            <!-- Measure icon -->
-                            <circle cx="400" cy="480" r="25" fill="white" opacity="0.2" />
-                            <text x="400" y="488" text-anchor="middle" fill="white" font-family="FontAwesome" font-size="22">📊</text>
-                            
-                            <!-- Iterate icon -->
-                            <circle cx="220" cy="400" r="25" fill="white" opacity="0.2" />
-                            <text x="220" y="408" text-anchor="middle" fill="white" font-family="FontAwesome" font-size="22">🔄</text>
-                        </g>
+                        <!-- Arrow tips -->
+                        <polygon points="295,180 280,190 295,200" fill="#3b82f6" />
+                        <polygon points="425,180 410,190 425,200" fill="#4f46e5" />
+                        <polygon points="555,180 540,190 555,200" fill="#4338ca" />
+                        <polygon points="685,180 670,190 685,200" fill="#3730a3" />
                     </svg>
                 </div>
                 <div class="md:w-1/2">
