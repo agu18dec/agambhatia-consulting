@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agam Bhatia | AI Implementation Advisor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #0e1c5a 0%, #1a48bb 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-xl font-bold gradient-text">Agam Bhatia</a>
+                <div class="hidden md:flex space-x-8 text-sm">
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                    <a href="#approach" class="text-gray-700 hover:text-blue-600 transition">Approach</a>
+                    <a href="#expertise" class="text-gray-700 hover:text-blue-600 transition">Expertise</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 gradient-bg text-white hero-bg">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="md:w-3/5">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Accelerate Your Startup with Enterprise-Grade AI Implementation</h1>
+                <p class="text-xl mb-8">Stanford-educated AI researcher and serial founder providing expert guidance to help high-growth startups leverage generative AI, LLMs, and autonomous agents to achieve transformative business outcomes.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://calendly.com/agambhatia1812" target="_blank" class="bg-white text-blue-700 font-medium px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition inline-block text-center">Schedule a Consultation</a>
+                    <a href="#services" class="border border-white text-white font-medium px-8 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition inline-block text-center">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Deep Expertise in Autonomous AI Agents</h3>
+                    <p class="text-gray-600">Leverage cutting-edge autonomous agent technology backed by Stanford research to automate complex workflows and unlock new capabilities that outperform traditional approaches by 30-50%.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Founder-Focused Implementation</h3>
+                    <p class="text-gray-600">Benefit from hands-on experience building and scaling AI-powered startups with a focus on rapid iteration, commercial viability, and real business outcomes that drive investor confidence.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Stanford-Grade Evaluation Framework</h3>
+                    <p class="text-gray-600">Apply research-backed benchmarking methodologies to quantify AI system performance, identify optimization opportunities, and demonstrate concrete ROI to stakeholders and investors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Startup-Focused AI Implementation Services</h2>
+                <p class="text-xl text-gray-600 md:w-2/3 mx-auto">Comprehensive support to help high-growth startups deploy multimodal AI systems, generative models, and autonomous agents that create sustainable competitive advantages and unlock new growth vectors.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-compass text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">AI Strategy Consulting</h3>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Venture-focused AI readiness assessment tailored for startups</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Custom implementation roadmap with investor-ready milestones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>LLM & vector database architecture recommendations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Concrete ROI metrics that resonate with VCs and angels</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800 transition">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Agent & LLM Implementation</h3>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Advanced agent architecture design with retrieval augmentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Prompt engineering and RAG optimization for 70% cost reduction</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Multi-modal AI integration (text, vision, audio) workflows</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Stanford-quality performance benchmarking frameworks</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800 transition">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">AI Integration Workshops</h3>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Technical team training on AI implementation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Executive education on AI capabilities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Customized learning paths for your team</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Hands-on implementation exercises</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800 transition">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Ongoing Advisory Services</h3>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Monthly retainer for technical guidance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Progress reviews and optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>Market intelligence on emerging AI tools</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span>On-demand troubleshooting support</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-medium hover:text-blue-800 transition">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="md:flex items-center gap-16">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1581092921461-7d25c8489de4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Consulting approach" class="rounded-xl shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">My Approach to AI Implementation</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">1. Assess</h3>
+                            <p class="text-gray-600">Begin with a comprehensive evaluation of your current systems, processes, and business objectives to identify the most impactful AI integration opportunities.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">2. Design</h3>
+                            <p class="text-gray-600">Create a tailored implementation strategy that aligns with your technical capabilities, budget, and long-term business goals.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">3. Implement</h3>
+                            <p class="text-gray-600">Guide your team through the implementation process, ensuring best practices in AI development, testing, and integration.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">4. Measure</h3>
+                            <p class="text-gray-600">Apply rigorous evaluation frameworks to benchmark performance and identify opportunities for optimization.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">5. Iterate & Scale</h3>
+                            <p class="text-gray-600">Continuously refine your AI systems based on performance data, user feedback, and emerging technologies while building scalable infrastructure ready for exponential growth.</p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://calendly.com/agambhatia1812" target="_blank" class="bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">Book Free Strategy Session</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Specialized AI Expertise</h2>
+                <p class="text-xl md:w-2/3 mx-auto">Cutting-edge knowledge in the most promising areas of artificial intelligence for business applications.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-filter backdrop-blur-sm">
+                    <h3 class="text-xl font-semibold mb-4">Autonomous AI Agents</h3>
+                    <p class="mb-4">Extensive experience developing systems that use LLMs to autonomously complete complex tasks across various domains.</p>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Web and mobile agent development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Theory of Mind for multi-agent systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Agent benchmarking and evaluation</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-filter backdrop-blur-sm">
+                    <h3 class="text-xl font-semibold mb-4">Advanced LLM Implementation</h3>
+                    <p class="mb-4">Practical expertise implementing frontier models with advanced context retrieval, orchestration, and optimization techniques based on Stanford research.</p>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Retrieval-augmented generation (RAG) architectures</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Token optimization for 60-80% cost reduction</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Multi-agent systems with Chain-of-Thought reasoning</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-filter backdrop-blur-sm">
+                    <h3 class="text-xl font-semibold mb-4">Multimodal Systems</h3>
+                    <p class="mb-4">Expertise in developing and evaluating AI systems that combine text, visual, and other data modalities.</p>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Vision-language model integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>Multimodal data processing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check mt-1 mr-2"></i>
+                            <span>3D environment modification</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="md:flex items-center gap-16">
+                <div class="md:w-1/3 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="AI Consultant" class="rounded-xl shadow-md w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-6">About Agam Bhatia</h2>
+                    <p class="text-xl mb-6">Stanford-educated AI researcher, entrepreneur, and implementation specialist who has built and scaled multiple high-growth startups using cutting-edge artificial intelligence.</p>
+                    <div class="space-y-6 text-gray-600">
+                        <p>As the founder of multiple AI-powered ventures and a researcher at Stanford University's Autonomous Agents Lab, I've been at the forefront of developing multimodal AI systems that deliver measurable business impact. My work on Theory of Mind in autonomous agents has pushed the boundaries of what's possible with today's deep learning technologies.</p>
+                        <p>My research on autonomous agents using large language models has been recognized at top AI conferences including NeurIPS and ACL, while my entrepreneurial ventures have given me practical experience implementing AI solutions that attract investment and drive sustainable growth.</p>
+                        <p>I founded this consultancy to help ambitious startup founders navigate the complex AI landscape, avoid costly implementation mistakes, and build defensible AI-powered solutions that provide genuine competitive advantages in today's rapidly evolving market.</p>
+                        <div class="pt-4">
+                            <h3 class="text-lg font-semibold mb-3">Education & Credentials</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-graduation-cap text-blue-600 mt-1 mr-2"></i>
+                                    <span>BS in Computer Science and Mathematics, Stanford University</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-award text-blue-600 mt-1 mr-2"></i>
+                                    <span>Dhirubhai Ambani Full Tuition Merit-Based Scholarship</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-file-alt text-blue-600 mt-1 mr-2"></i>
+                                    <span>Published research in NeurIPS and ACL conferences</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to transform your business with AI?</h2>
+            <p class="text-xl text-gray-600 mb-8 md:w-2/3 mx-auto">Schedule a free 30-minute consultation to discuss your AI implementation needs and how I can help.</p>
+            <a href="https://calendly.com/agambhatia1812" target="_blank" class="bg-blue-600 text-white font-medium px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition inline-block">Book Your Free Strategy Session</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 md:w-2/3 mx-auto">Have questions about how AI can benefit your business? Reach out for a consultation.</p>
+            </div>
+            <div class="md:flex gap-10">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <form class="space-y-6" id="contactForm" action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" required>
+                        </div>
+                        <div>
+                            <label for="company" class="block text-gray-700 font-medium mb-2">Company</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">How can I help?</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition w-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-6">Book a Consultation</h3>
+                    <p class="text-gray-600 mb-8">Schedule a free 30-minute consultation to discuss your startup's AI implementation needs and explore how my Stanford research background and founder experience can accelerate your growth trajectory.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">agam2026@stanford.edu</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-600">+1 (747) 588-2938</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Schedule directly</h4>
+                                <p class="text-gray-600 mb-2">Book a time slot that works for you</p>
+                                <a href="https://calendly.com/agambhatia1812" target="_blank" class="bg-blue-600 text-white font-medium px-4 py-2 rounded-lg text-sm inline-block">Book a Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 md:w-2/3 mx-auto">Common questions about AI implementation consulting services.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">How do I know if my startup is ready for AI implementation?</h3>
+                    <p class="text-gray-600">Every startup has different levels of AI readiness. Through an initial assessment, I'll evaluate your data infrastructure, technical capabilities, and business objectives to determine the most appropriate AI implementation strategy for your current stage and funding situation.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">What industries do you specialize in?</h3>
+                    <p class="text-gray-600">I've worked with startups across e-commerce, fintech, healthtech, SaaS, and enterprise software. My approach is adaptable to different industry contexts, focusing on the underlying data and business processes that can benefit from AI enhancement to create defensible moats.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">How long does a typical AI implementation project take?</h3>
+                    <p class="text-gray-600">Implementation timelines vary based on project scope and complexity. For startups, I focus on rapid prototyping with initial implementations in 2-4 weeks, followed by iterative improvements. More comprehensive solutions might require 2-3 months of development, always with an emphasis on showing early results.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Do you provide ongoing support after implementation?</h3>
+                    <p class="text-gray-600">Yes, I offer flexible ongoing advisory services to ensure your AI systems continue to perform optimally as your startup scales. This can include regular performance reviews, troubleshooting support, and guidance on incorporating emerging technologies, all tailored to your growing business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="md:flex justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">Agam Bhatia</h3>
+                    <p class="text-gray-400">AI Implementation Advisor</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/agambhatia" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/agam-bhatia" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/agambhatia" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="md:flex justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Agam Bhatia. All rights reserved.</p>
+                <div class="flex space-x-8 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple ScrollTo functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // You'll need to replace the formspree endpoint in the HTML
+                // with your actual endpoint when you set it up
+                
+                const formData = new FormData(contactForm);
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Thanks for your message! I\'ll get back to you soon.');
+                        contactForm.reset();
+                    } else {
+                        alert('Oops! There was a problem submitting your form.');
+                    }
+                })
+                .catch(error => {
+                    alert('Oops! There was a problem submitting your form.');
+                    console.error(error);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
